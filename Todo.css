@@ -1,0 +1,82 @@
+body {
+    margin: 30px;
+    min-width: 100px;
+}
+* {
+    box-sizing: content-box;
+  }
+  
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: #eee;
+    font-size: 16px;
+    transition: 0.3s;
+  
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  ul li.checked {
+    background: rgb(45, 12, 226);
+    color: rgb(239, 251, 252);
+    text-decoration: line-through;
+  }
+  
+  ul li.checked::before {
+    content: '#';
+    position: absolute;
+    border-color: rgb(255, 255, 255);
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    height: 30px;
+    width: 7px;
+  }
+  
+  .close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 20px 12px 20px;
+  }
+  
+  .header {
+    background-color: #16e4e4;
+    padding: 10px 20px;
+    color: white;
+    text-align: center;
+  }
+  
+  input {
+    margin: 0;
+    border: none;
+    border-radius: 20px;
+    width: 65%;
+    padding: 11px;
+    float: inline-start;
+    font-size: 16px;
+  }
+  
+  .addBtn {
+    padding: 10px;
+    width: 25%;
+    background: #d9d9d9;
+    color: #555;
+    float: inline-end;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 10px;
+  }
+  
+  
